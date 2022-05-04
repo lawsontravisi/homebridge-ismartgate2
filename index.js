@@ -119,7 +119,7 @@ iSmartGate.prototype = {
        this.log.debug("Start refreshing temperature & battery");
 
         request.get({
-            url: "http://" + this.hostname + "/isg/temperature.php?door=1",
+            url: "http://" + this.hostname + "/isg/temperature.php?door=2",
             header: this.response.headers,
             jar: cookieJar
         }, function(err, response, body) {
